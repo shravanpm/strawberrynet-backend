@@ -1,6 +1,6 @@
-const app = require("./index")
-const connect = require('./configs/db')
-const port = 5000
+const app = require("./index");
+const connect = require('./configs/db');
+const port = 5000;
 app.listen(process.env.PORT || port,async()=>{
     try{
         await connect();
